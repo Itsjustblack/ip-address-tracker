@@ -10,7 +10,7 @@ function App() {
 	const [searchValue, setsearchValue] = useState("");
 
 	const handleSubmit = (value?: string) => {
-		if(valu) setsearchValue(value);
+		if (value) setsearchValue(value);
 	};
 
 	const scrollToTop = () => {
