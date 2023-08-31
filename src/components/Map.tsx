@@ -35,7 +35,7 @@ const Map = ({ position = [6.45407, 3.39467] }: Props) => {
 			>
 				<TileLayer
 					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}{@2x}.png"
+					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}{r}.png"
 				/>
 				<Marker
 					position={position}
