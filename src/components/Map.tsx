@@ -21,7 +21,6 @@ const customIcon = L.icon({
 	iconUrl: marker,
 	iconSize: [33, 40],
 	iconAnchor: [12, 12],
-	// popupAnchor: [0, 0],
 });
 
 const Map = ({ position = [6.45407, 3.39467] }: Props) => {
