@@ -31,4 +31,4 @@ Users should be able to:
 
 - Website - [Aghedo Jason](https://www.your-site.com)
 - Frontend Mentor - [@Itsjustblack](https://www.frontendmentor.io/profile/Itsjustblack)
-- Twitter - [@yourusername](https://twitter.com/JasonAghedo)
+- Twitter - [@JasonAghedo](https://twitter.com/JasonAghedo)
