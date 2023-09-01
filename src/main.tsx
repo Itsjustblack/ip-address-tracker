@@ -10,7 +10,7 @@ const queryClient = new QueryClient({
 	queryCache: new QueryCache({
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		onError: (error: any) => {
-			if (error.response.status >= 400) toast.error(`Api key has Expired`);
+			if (error.response.status == 403) toast.error(`Api key has Expired`);
 			else toast.error(`Something has Occured: ${error.message}`);
 		},
 	}),

@@ -1,16 +1,21 @@
 import "leaflet/dist/leaflet.css";
-import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import DisplayData from "./components/DisplayData";
 import Map from "./components/Map";
 import SearchBar from "./components/SearchBar";
 import useData from "./hooks/useData";
+import { IPV4, IPV6 } from "./constants";
 
 function App() {
 	const [searchValue, setsearchValue] = useState("");
 
 	const handleSubmit = (value?: string) => {
-		if (value) setsearchValue(value);
+		if (value) {
+			if (IPV4.test(value) || IPV6.test(value)) setsearchValue(value);
+			else toast.error("Invalid IP Address");
+		} else toast.error("Enter an IP Address");
 	};
 
 	const scrollToTop = () => {
