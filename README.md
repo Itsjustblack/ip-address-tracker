@@ -1,27 +1,34 @@
-# React + TypeScript + Vite
+# IP Address Tracker using ReactQuery and Typescript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### The challenge
 
-Currently, two official plugins are available:
+Users should be able to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements on the page
+- See their own IP address on the map on the initial page load
+- Search for any IP addresses or domains and see the key information and location
 
-## Expanding the ESLint configuration
+### Screenshot
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+(./public/screenshot.png)
 
-- Configure the top-level `parserOptions` property like this:
+### Links
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Solution URL: [https://github.com/Itsjustblack/ip-address-tracker]
+- Live Site URL: [https://ip-address-tracker-qw7w.vercel.app/]
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Built with
+
+- Semantic HTML5 markup
+- CSS, Tailwind CSS
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [React Query](https://tanstack.com/query/v4) - React JS library
+
+## Author
+
+- Website - [Aghedo Jason](https://www.your-site.com)
+- Frontend Mentor - [@Itsjustblack](https://www.frontendmentor.io/profile/Itsjustblack)
+- Twitter - [@yourusername](https://twitter.com/JasonAghedo)

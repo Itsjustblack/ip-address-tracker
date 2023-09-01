@@ -26,20 +26,40 @@ function App() {
 	};
 	const { data: res, isLoading } = useData(searchValue);
 	return (
-		<div
-			onLoad={scrollToTop}
-			className="customFill"
-		>
-			<header className="bg-heroBgDesktop bg-center bg-cover bg-no-repeat w-full px-7 pt-12 lg:pt-5 pb-[80px] lg:pb-[50px] flex flex-col items-center">
-				<h1 className="text-white font-medium text-[28px] mb-5 text-center">IP Address Tracker</h1>
-				<SearchBar handleSubmit={handleSubmit} />
-				<DisplayData
-					data={res?.data}
-					isLoading={isLoading}
-				/>
-			</header>
-			<Map position={res?.data?.position} />
-		</div>
+		<>
+			<div
+				onLoad={scrollToTop}
+				className="customFill"
+			>
+				<header className="bg-heroBgDesktop bg-center bg-cover bg-no-repeat w-full px-7 pt-12 lg:pt-5 pb-[80px] lg:pb-[50px] flex flex-col items-center">
+					<h1 className="text-white font-medium text-[28px] mb-5 text-center">IP Address Tracker</h1>
+					<SearchBar handleSubmit={handleSubmit} />
+					<DisplayData
+						data={res?.data}
+						isLoading={isLoading}
+					/>
+				</header>
+				<Map position={res?.data?.position} />
+				<div className="absolute bottom-4 w-full flex justify-center text-[#3d3d3d]">
+					<p>
+						{"Challenge by "}
+						<a
+							className="text-black underline underline-offset-1"
+							href=""
+						>
+							Frontend Mentor
+						</a>
+						{". Coded by "}
+						<a
+							className="text-black underline underline-offset-1"
+							href=""
+						>
+							Aghedo Jason
+						</a>
+					</p>
+				</div>
+			</div>
+		</>
 	);
 }
 
